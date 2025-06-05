@@ -3,8 +3,46 @@ import Icon from "@/components/ui/icon";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-wow-light via-white to-wow-yellow px-4">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
+      {/* Фоновые изображения детских праздников */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-10 left-10 w-64 h-48 rounded-xl overflow-hidden opacity-20 transform -rotate-12 hover:opacity-30 transition-opacity">
+          <img
+            src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=300&fit=crop"
+            alt="Детский праздник"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="absolute top-20 right-16 w-48 h-36 rounded-xl overflow-hidden opacity-25 transform rotate-6 hover:opacity-35 transition-opacity">
+          <img
+            src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop"
+            alt="День рождения с тортом"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="absolute bottom-32 left-20 w-56 h-42 rounded-xl overflow-hidden opacity-20 transform rotate-3 hover:opacity-30 transition-opacity">
+          <img
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=300&fit=crop"
+            alt="Веселые дети на празднике"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="absolute bottom-20 right-10 w-40 h-32 rounded-xl overflow-hidden opacity-25 transform -rotate-6 hover:opacity-35 transition-opacity">
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
+            alt="Детские воздушные шары"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Градиентный оверлей для читаемости */}
+        <div className="absolute inset-0 bg-gradient-to-br from-wow-light/80 via-white/90 to-wow-yellow/80"></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center animate-fade-in relative z-10">
         <div className="mb-8">
           <img
             src="https://cdn.poehali.dev/files/bc8922ae-9fcd-4cde-8d52-53ff471ad90e.jpg"
