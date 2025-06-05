@@ -9,7 +9,7 @@ const Hero = () => {
           <img
             src="https://cdn.poehali.dev/files/bc8922ae-9fcd-4cde-8d52-53ff471ad90e.jpg"
             alt="WowMoment Logo"
-            className="mx-auto h-32 w-auto mb-6 hover-scale"
+            className="mx-auto h-48 w-auto mb-6 hover-scale bg-transparent mix-blend-multiply"
           />
         </div>
 
